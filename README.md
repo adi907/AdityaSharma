@@ -34,9 +34,7 @@ This repository contains the source code for my portfolio website. It is designe
 • Clone the repository
 
 ```bash
-Copy code
 git clone https://github.com/your-username/portfolio-website.git
-Open the index.html file:
 Open the index.html file in your preferred web browser to explore the various sections of the portfolio.
 ```
 
