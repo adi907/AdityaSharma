@@ -1,0 +1,123 @@
+#Experience {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  /* border: 2px solid black; */
+}
+
+.timeline-box {
+  position: relative;
+  margin: 5px;
+  width: 40%;
+  left: 5%;
+  min-height: 150px;
+  /* border: 2px solid black; */
+}
+
+.timeline-box:nth-child(2n) {
+  left: 53%;
+}
+
+.timeline-divider {
+  position: absolute;
+  height: 75%;
+  width: 0;
+  border: 4px dashed grey;
+  top: 10%;
+  left: 50%;
+}
+
+.timeline-traveller {
+  position: sticky;
+  top: 25%;
+  margin-top: -5vh;
+  margin-left: -0.2vh;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.fa-solid{
+    font-weight: 900;
+    font-size:2.5vw;
+    color:#36fbb1;
+}
+
+#timeline-divider .timeline-traveller {
+  position: sticky;
+  top: 135px;
+  z-index: 2;
+}
+
+.timeline-box:nth-child(2n + 1)::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -14%;
+  border-radius: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: #9c0304;
+  z-index: 1;
+  margin-top: 2.7vh;
+}
+
+.timeline-box:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -9%;
+  border-radius: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: #9c0304;
+  z-index: 1;
+  margin-top: 3.3vh;
+}
+
+.timeline-container {
+  padding: 8px;
+}
+
+.timeline-logo {
+  position: absolute;
+  margin-left: 75%;
+  margin-top: 5%;
+  width: 50px;
+  overflow: hidden;
+}
+
+.timeline-logo > img {
+  width: 100%;
+}
+
+.experience-designation {
+  color: #36fbb1;
+  font-size: 1.4rem;
+}
+
+.experience-company-name {
+  margin: 5px 0 0;
+  color: #9c0304;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.experience-duration {
+  color: #9e9b9b;
+  font-weight: 100;
+  color: grey;
+  font-size: 1rem;
+}
+
+.experience-description {
+  font-size: 14px;
+  color: #808080;
+  text-align: justify;
+  line-height: 20px;
+}
