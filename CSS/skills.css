@@ -3,16 +3,48 @@
     width: 80%;
 }
 
+#Skills{
+    margin:0 auto;
+}
+
+.row{
+    justify-content: center;
+}
 .interest{
-    background: #F14B4B15;
-    border: 1px solid #F14B4B;
     border-radius: 50px;
-    color: #F14B4B;
     text-align: center;
+    width:48%;
 }
 
 .interest h3{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-top:0.1em;
+    margin-bottom: 0.5em;
+}
+
+#lang{
+    background: #F14B4B15;
+    color: #F14B4B;
+    border: 1px solid #F14B4B;
+}
+#lib{
+    background: #393E46;
+    color: #00ADB5;
+    border: 1px solid #00ADB5;
+}
+
+#tools{
+    background: #191919;
+    color: #E3651D;
+    border: 1px solid #E3651D;
+}
+#db{
+    background: #001524;
+    color: #BED754;
+    border: 1px solid #BED754;
+}
+#db .skillIteams{
+    height: 90%;
 }
 
 .skillIteams{
@@ -22,21 +54,33 @@
     grid-template-rows: repeat(3, auto);
     align-items: center;
     width: 90%;
-    margin: 0 auto;
+    margin:0 auto;
 }
 .iteamCircle{
-    background-color: #F14B4B;
-    height: 80px;
-    width: 80px;
+    height: 3.5vw;
+    width: 3.5vw;
     margin: 0 auto 5px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
+#lang .iteamCircle{
+    background-color: #F14B4B;
+}
+#lib .iteamCircle{
+    background-color: #30E3CA;
+}
+#tools .iteamCircle{
+    background-color: #750E21;
+}
+#db .iteamCircle{
+    background-color: #B5CB99;
+}
+
 .iteamCircle img{
     transition: 0.5s all linear;
-    height: 75%;
+    height: 60%;
 }
 .iteamCircle:hover > img{
     transform: rotate(360deg);
@@ -45,6 +89,7 @@
 .iteam p{
     margin: 0% auto;
     color: #E7E9E9;
+    font-size: 14px;
     text-align: center;
 }
 .iteam1{
@@ -67,6 +112,7 @@
     grid-column: 3;
     grid-row: 3;
 }
+
 @media only screen and (max-width: 850px) {
     .skills .wrap{
         padding: 0 20px;
@@ -81,39 +127,12 @@
         height: 70px;
         width: 70px;
     }
-}
-@media only screen and (max-width: 768px) {
-    .skills .wrap{
-        grid-template-areas: 'text' 'iteams' 'interest';
-    }
-    .interest{
-        margin: 20px auto;
-        width: 75%;
-    }
-    .skillIteams{
-        grid-template-areas: 'iteam4 . iteam5 . iteam3'
-        '. iteam1 . iteam2 .';
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin-top: 20px;
-    }
-    .iteam1{
-        grid-area: iteam1;
-        justify-self: end;
-    }
-    .iteam2{
-        grid-area: iteam2;
-        justify-self: start;
-    }
-    .iteam3{
-        grid-area: iteam3;
-    }
-    .iteam4{
-        grid-area: iteam4;
-    }
-    .iteam5{
-        grid-area: iteam5;
+
+    #db .skillIteams{
+        height: 70%;
     }
 }
+
 @media only screen and (max-width: 500px) {
     .iteamCircle{
         height: 60px;

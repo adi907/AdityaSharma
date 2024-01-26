@@ -44,8 +44,8 @@
 
 .fa-solid{
     font-weight: 900;
-    font-size:2.5vw;
-    color:#36fbb1;
+    font-size:2.5vmax;
+    color:#4CB9E7;
 }
 
 #timeline-divider .timeline-traveller {
@@ -58,10 +58,10 @@
   content: "";
   position: absolute;
   top: 30%;
-  right: -14%;
+  right: -14.4%;
   border-radius: 50%;
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1rem;
+  height: 1rem;
   background-color: #9c0304;
   z-index: 1;
   margin-top: 2.7vh;
@@ -70,11 +70,11 @@
 .timeline-box:nth-child(2n)::after {
   content: "";
   position: absolute;
-  top: 30%;
-  left: -9%;
+  top: 32%;
+  left: -9.5%;
   border-radius: 50%;
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1rem;
+  height: 1rem;
   background-color: #9c0304;
   z-index: 1;
   margin-top: 3.3vh;
