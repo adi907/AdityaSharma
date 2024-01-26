@@ -5,7 +5,7 @@ const cursor2 = document.querySelector('.cursor-2');
 window.addEventListener('mousemove',(e)=>{
     let cHeight=e.pageY;
     let cWidth=e.pageX;
-    console.log(cHeight);
+
     cursor1.style.top=`${cHeight}px`;
     cursor1.style.left=`${cWidth}px`;
     cursor2.style.top=`${cHeight}px`;
