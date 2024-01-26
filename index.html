@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/cursor.css">
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/about.css">
     <link rel="stylesheet" href="CSS/Projects.css">
@@ -37,7 +38,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/00b2e9f8b6.js" crossorigin="anonymous"></script>
-    <script src="./JS/typeWriter.js"></script>
 </head>
 
 <style>
@@ -59,18 +59,22 @@
 </head>
 
 <body>
-    
+    <!-- custom cursors  -->
+    <div class="cursor-1"></div>
+    <div class="cursor-2"></div>
+
     <!-- Navigation Bar -->
     <nav class="pt-1">
 
-        <a href=""><img class="mx-4" id="logo" src="images/adityaLogo.jpg" alt=""></a>
+
+        <a class="special-cursor" href=""><img class="mx-4" id="logo" src="images/adityaLogo.jpg" alt=""></a>
         
         <ul>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Experience">Experience</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li class="special-cursor"><a href="#About">About</a></li>
+            <li class="special-cursor"><a href="#Projects">Projects</a></li>
+            <li class="special-cursor"><a href="#Skills">Skills</a></li>
+            <li class="special-cursor"><a href="#Experience">Experience</a></li>
+            <li class="special-cursor"><a href="#Contact">Contact</a></li>
         </ul>
         <menu>
             <hr id="hr1">
@@ -80,6 +84,7 @@
             <hr id="hr5">
         </menu>
     </nav>
+
     <div class="phoneMenu">
         <h2><a href="#About" onclick="hideMenu();">About</a></h2>
         <h2><a href="#Projects" onclick="hideMenu();">Projects</a></h2>
@@ -87,22 +92,19 @@
         <h2><a href="#Experience" onclick="hideMenu();">Experience</a></h2>
         <h2><a href="#Contact" onclick="hideMenu();">Contact</a></h2>
     </div>
+
     <!-- Right Section -->
     <section class="right">
 
-
-
-
-        <h2><a href="mailto:adityaq907@gmail.com">adityaq907@gmail.com</a></h2>
+        <h2><a class="special-cursor" href="mailto:adityaq907@gmail.com">adityaq907@gmail.com</a></h2>
         <hr>
     </section>
 
     <!-- Left Section -->
     <section class="left socials">
-        <a href="https://www.linkedin.com/in/aditya-sharma-7432a0208/" target="_blank"><img src="icons/linkedin.svg"
-                alt="LinkedIn"></a>
-        <a href="https://github.com/adi907" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
-        <a href="" target="_blank"><img src="icons/twitter.svg" alt="Twitter"></a>
+        <a class="special-cursor" href="https://www.linkedin.com/in/aditya-sharma-7432a0208/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+        <a class="special-cursor" href="https://github.com/adi907" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+        <a class="special-cursor" href="" target="_blank"><img src="icons/twitter.svg" alt="Twitter"></a>
         <hr>
     </section>
 
@@ -117,13 +119,13 @@
         <img src="./icons/contact.svg" alt="" class="contactIcon">
         <img src="./icons/close.svg" alt="" class="closeIcon">
     </div>
-
+    
    
     <div class="home">
         <div class="content">
             <h3>Hello, My name is</h3>
             <div>
-                <h1>Aditya Sharma</h1>
+                <h1 class="special-cursor">Aditya Sharma</h1>
             </div>
             <h2>I'm a <span class="role" data-wait="1000"
                     data-words='["Programmer.","Web Developer.","Problem Solver."]' data-wait='3000'></span></h2>
@@ -139,6 +141,7 @@
 
     <!-- About Page -->
     <div class="about part pt-4" id="About">
+
         <div class="title">
             <h1>About Me</h1>
             <hr>
@@ -445,7 +448,6 @@
     <script src="./JS/nav.js"></script>
     <script src="./JS/menu.js"></script>
     <script src="./JS/contactButton.js"></script>
-    <script src="JS/experience.js"></script>
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -461,6 +463,7 @@
           
         }
     </script>
+    <script src="./JS/typeWriter.js"></script>
   
 </body>
 

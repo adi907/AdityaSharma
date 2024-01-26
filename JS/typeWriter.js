@@ -1,3 +1,30 @@
+// Cursor JS
+const cursor1 = document.querySelector('.cursor-1');
+const cursor2 = document.querySelector('.cursor-2');
+
+window.addEventListener('mousemove',(e)=>{
+    let cHeight=e.pageY;
+    let cWidth=e.pageX;
+    console.log(cHeight);
+    cursor1.style.top=`${cHeight}px`;
+    cursor1.style.left=`${cWidth}px`;
+    cursor2.style.top=`${cHeight}px`;
+    cursor2.style.left=`${cWidth}px`;
+})
+
+document.querySelectorAll('.special-cursor').forEach(links =>{
+    links.onmouseenter = () =>{
+        cursor1.classList.add('active');
+        cursor2.classList.add('active');
+    }
+
+    links.onmouseleave = () =>{
+        cursor1.classList.remove('active');
+        cursor2.classList.remove('active');
+    }
+});
+    
+
 const TypeWriter = function(txtElement, words, wait){
     this.txtElement = txtElement;
     this.words = words;
