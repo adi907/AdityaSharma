@@ -10,19 +10,24 @@ window.addEventListener('mousemove',(e)=>{
     cursor1.style.left=`${cWidth}px`;
     cursor2.style.top=`${cHeight}px`;
     cursor2.style.left=`${cWidth}px`;
-})
+});
 
-document.querySelectorAll('.special-cursor').forEach(links =>{
-    links.onmouseenter = () =>{
+function handleCursorEvents(element) {
+    element.onmouseenter = () => {
         cursor1.classList.add('active');
         cursor2.classList.add('active');
     }
 
-    links.onmouseleave = () =>{
+    element.onmouseleave = () => {
         cursor1.classList.remove('active');
         cursor2.classList.remove('active');
     }
-});
+}
+
+document.querySelectorAll('.special-cursor').forEach(handleCursorEvents);
+document.querySelectorAll('a').forEach(handleCursorEvents);
+document.querySelectorAll('img').forEach(handleCursorEvents);
+
     
 
 const TypeWriter = function(txtElement, words, wait){
