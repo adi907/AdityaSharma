@@ -174,8 +174,7 @@
     <!-- Projects Page -->
     <div class="part py-4" id="Projects">
         <div class="title">
-            <h1>Projects</h1cla>
-            <hr>
+            <h1>Projects</h1>
         </div>
                     
         <div class="work-list mt-4">
@@ -429,6 +428,75 @@
             <h1>Contact</h1>
             <hr>
         </div>
+
+        <div class="row">
+            <div class="col mt-4">
+
+                <a href="mailto:adityaq907@gmail.com" target="_blank">
+                    <div class="contact_info my-3">
+                        <i class="uil uil-envelope-alt contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">adityaq907@gmail.com</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/aditya-sharma-7432a0208/" target="_blank">
+                    <div class="contact_info my-3">
+                        <i class="uil uil-linkedin-alt contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">LinkedIn</h3>
+                            <span class="contact_subtitle">aditya-sharma-7432a0208</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#Contact">
+                    <div class="contact_info my-3">
+                        <i class="uil uil-location-point contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">New Delhi, India</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">    
+                <form action="https://formspree.io/f/xyyozeaq" class="contact_form grid" id="contact-form" method="POST">
+
+                    <div id="alert" class="alert_style"></div>
+
+                    <div class="contact_inputs grid">
+
+                        <div class="contact_content mb-2">
+                            <input type="text" name="name" class="contact_input" placeholder="Name" id="name" required>
+                        </div>
+                        <div class="contact_content mb-2">
+                            <input type="email" name="email" class="contact_input" placeholder="Email" id="email" required>
+                        </div>
+                        <div class="contact_content mb-2">
+                            <input type="text" name="subject" class="contact_input" placeholder="Subject" id="subject" required>
+                        </div>
+                        <div class="contact_content mb-2">
+                            <textarea name="message" id="" cols="0" rows="3" class="contact_input message" placeholder="Message" id="message" required></textarea>
+                        </div>
+                    
+                    </div>
+
+                    <div>
+                        <button type="button" class="mt-3">
+                            <p class="mx-2 mt-1 mb-4">Send Message
+                                <i class="uil uil-message button_icon"></i>
+                            </p>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
         <div class="wrap mt-4">
             
             <a href="mailto:adityaq907@gmail.com"><button>Mail Me</button></a>
@@ -443,6 +511,7 @@
             <span class="footer" data-wait="500"
                 data-words='["I love to code.","Creating better version of myself!!","Searching for opportunities.","Learning..."]'></span>
         </footer>
+
     </div>
 
     <script src="./JS/nav.js"></script>

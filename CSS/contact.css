@@ -1,6 +1,4 @@
-.contact{
-    height: 90vh;
-}
+
 .contact hr{
     margin: 0%;
     width: 72%;
@@ -11,14 +9,66 @@
 .contact .wrap > *{
     padding: 30px 0;
 }
-.contact h3{
-    width: 65%;
-    margin: 0%;
-    text-align: center;
-    color: #BAC3CF;
-    font-weight: 500;
-    z-index: -1;
+
+.contact_container {
+  row-gap: 3rem;
 }
+
+.contact_info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact_icon {
+  font-size: 2rem;
+  margin-right: 0.75rem;
+}
+
+.contact_title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.contact_subtitle {
+  font-size: 1rem;
+  color: hsl(250, 8%, 45%);;
+}
+
+.contact_content {
+  background-color: hsl(250, 70%, 96%);
+  width: fit-content;
+  border-radius: 0.25rem;
+
+}
+
+.contact_input {
+    border-radius: 0.25rem;
+    background-color: hsl(250, 70%, 96%);
+    color: hsl(250, 8%, 45%);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938rem;
+    width: 40vw;
+    border: none;
+    outline: none;
+    margin: 0.8rem ;
+}
+
+.contact_label {
+  font-size: 0.75rem;
+  color: hsl(250, 8%, 15%);
+}
+
+.alert_style {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.813rem;
+  background-color: hsl(250, 69%, 61%);
+  color: #fff;
+  border-radius: 0.5rem;
+  display: none;
+}  
+
+
 .contact .socials{
     display: flex;
     justify-content: space-around;
