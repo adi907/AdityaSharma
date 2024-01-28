@@ -12,8 +12,8 @@ contact.addEventListener('click',()=>{
     }else{
         hide();
     }
-    console.log(contactIcon.classList);
-    console.log(closeIcon.classList);
+    // console.log(contactIcon.classList);
+    // console.log(closeIcon.classList);
 });
 function show() {
     firstPlatform.classList.remove("hideFirst");
