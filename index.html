@@ -69,7 +69,7 @@
 
         <a class="special-cursor" href=""><img class="mx-4" id="logo" src="images/adityaLogo.jpg" alt=""></a>
         
-        <ul>
+        <ul class="nav_menu">
             <li class="special-cursor"><a href="#About">About</a></li>
             <li class="special-cursor"><a href="#Projects">Projects</a></li>
             <li class="special-cursor"><a href="#Skills">Skills</a></li>
@@ -104,7 +104,7 @@
     <section class="left socials">
         <a class="special-cursor" href="https://www.linkedin.com/in/aditya-sharma-7432a0208/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
         <a class="special-cursor" href="https://github.com/adi907" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
-        <a class="special-cursor" href="" target="_blank"><img src="icons/twitter.svg" alt="Twitter"></a>
+        <a class="special-cursor" href="https://leetcode.com/adi_420/" target="_blank"><img src="icons/leetcode.png" alt="Leetcode"></a>
         <hr>
     </section>
 
@@ -121,7 +121,7 @@
     </div>
     
    
-    <div class="home">
+    <div class="home" id="Home">
         <div class="content">
             <h3>Hello, My name is</h3>
             <div>
@@ -140,7 +140,7 @@
     </div>
 
     <!-- About Page -->
-    <div class="about part pt-4" id="About">
+    <div class="about part pt-4 segment" id="About">
 
         <div class="title">
             <h1>About Me</h1>
@@ -172,14 +172,14 @@
     </div>
 
     <!-- Projects Page -->
-    <div class="part py-4" id="Projects">
+    <div class="part py-4 segment" id="Projects">
         <div class="title">
             <h1>Projects</h1>
         </div>
                     
         <div class="work-list mt-4">
             <div class="work">
-                <img src="https://images.unsplash.com/photo-1571063769135-f7b6b742db4e?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img src="icons/proj1.avif">
                 <div class="layer">
                     <h3>E-commerce Store</h3>
                     <p>A dynamic E-commerce store that enables users to browse, add items to their carts, and complete purchases from a
@@ -196,7 +196,8 @@
                 </div>
             </div>
             <div class="work">
-                <img src="https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <!-- <img src="https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"> -->
+                <img src="icons/proj3.avif">
                 <div class="layer">
                     <h3>To Do List</h3>
                     <p>Web Application designed to help users manage their daily tasks efficiently.</p>
@@ -211,7 +212,7 @@
     </div>
 
     <!-- Skills Page -->
-    <div class="skills part mt-4" id="Skills">
+    <div class="skills part mt-4 segment" id="Skills">
         <div class="title">
             <h1>Skills</h1>
             <hr>
@@ -352,7 +353,7 @@
     </div>
     
     <!-- Experience Page -->
-    <div id="Experience" class="pt-4">
+    <div class="segment pt-4" id="Experience">
         <div class="title my-4">
             <h1>Experience</h1>
             <hr>
@@ -423,7 +424,7 @@
 
     
     <!-- Contact Me -->
-    <div class="contact part mt-4" id="Contact">
+    <div class="contact part mt-4 segment" id="Contact">
         <div class="title">
             <h1>Contact</h1>
             <hr>
@@ -480,17 +481,19 @@
                             <input type="text" name="subject" class="contact_input" placeholder="Subject" id="subject" required>
                         </div>
                         <div class="contact_content mb-2">
-                            <textarea name="message" id="" cols="0" rows="3" class="contact_input message" placeholder="Message" id="message" required></textarea>
+                            <textarea name="message" id="Reviewmessage" cols="0" rows="3" class="contact_input message" placeholder="Message" required></textarea>
                         </div>
                     
                     </div>
 
                     <div>
-                        <button type="button" class="mt-3">
+                        <button type="button" class="mt-3" id="sbmBtn" onclick="createRecord()">
                             <p class="mx-2 mt-1 mb-4">Send Message
                                 <i class="uil uil-message button_icon"></i>
                             </p>
                         </button>
+
+                        <p><small id="error-msg"></small></p>
                     </div>
 
                 </form>
@@ -514,14 +517,17 @@
 
     </div>
 
-    <script src="./JS/nav.js"></script>
-    <script src="./JS/menu.js"></script>
-    <script src="./JS/contactButton.js"></script>
+    <div id="loading-overlay">
+        <div class="loader"></div>
+    </div>
 
+    <script src="./JS/nav.js"></script>
+    <script src="./JS/contactButton.js"></script>
+    
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
+        AOS.init({
           offset: 150,
           duration: 800
       });
@@ -532,7 +538,10 @@
           
         }
     </script>
+
+    <script src="./JS/menu.js"></script>
     <script src="./JS/cursor.js"></script>
+    <script src="./JS/contact.js"></script>
   
 </body>
 

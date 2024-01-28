@@ -26,6 +26,7 @@ function handleCursorEvents(element) {
 
 document.querySelectorAll('.special-cursor').forEach(handleCursorEvents);
 document.querySelectorAll('a').forEach(handleCursorEvents);
+document.querySelectorAll('button').forEach(handleCursorEvents);
 document.querySelectorAll('img').forEach(handleCursorEvents);
 
     

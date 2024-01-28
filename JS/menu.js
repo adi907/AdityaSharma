@@ -55,10 +55,34 @@ window.onresize = ()=>{
     }
 }
 
-// smooth scrolling
-$('a[href*="#"]').on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top,
-    }, 500, 'linear')
-});
+// SCROLL SECTIONS ACTIVE LINK
+const sections = document.querySelectorAll(".segment");
+const nav_links=document.querySelectorAll(".nav_menu li a");
+
+function scrollActive(){
+    const scrollY = window.scrollY+200;
+
+    // Resolve home page issue
+    const homeSectionOffset=document.getElementById('Home').offsetTop;
+    const homeSectionHeight=document.getElementById('Home').clientHeight;
+    if(scrollY>=homeSectionOffset && scrollY<homeSectionOffset+homeSectionHeight){
+        nav_links.forEach((link) => {
+            link.classList.remove('active-link');
+        });
+        return;
+    }
+
+    sections.forEach((section, index) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            nav_links.forEach((link) => {
+                link.classList.remove('active-link');
+            });
+            nav_links[index].classList.add('active-link');
+        }
+    });
+    
+}
+window.addEventListener("scroll", scrollActive);
