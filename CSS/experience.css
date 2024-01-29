@@ -20,10 +20,6 @@
   /* border: 2px solid black; */
 }
 
-.timeline-box:nth-child(2n) {
-  left: 53%;
-}
-
 .timeline-divider {
   position: absolute;
   height: 75%;
@@ -52,6 +48,10 @@
   position: sticky;
   top: 135px;
   z-index: 2;
+}
+
+.timeline-box:nth-child(2n) {
+  left: 53%;
 }
 
 .timeline-box:nth-child(2n + 1)::after {
@@ -120,4 +120,47 @@
   color: #808080;
   text-align: justify;
   line-height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .experience-designation{
+    font-size: 1em;
+  }
+  .experience-company-name,.experience-duration{
+    font-size: 0.7em;
+  }
+  .experience-description{
+    font-size: 0.5em;
+  }
+
+  .timeline-box:nth-child(2n) {
+    left: 53%;
+  }
+  
+  .timeline-box:nth-child(2n + 1)::after {
+    content: "";
+    position: absolute;
+    top: 24%;
+    right: -16.4%;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: #9c0304;
+    z-index: 1;
+    margin-top: 2.7vh;
+  }
+  
+  .timeline-box:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    top: 32%;
+    left: -11.5%;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: #9c0304;
+    z-index: 1;
+    margin-top: 3.3vh;
+  }
+
 }

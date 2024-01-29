@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/contactIcon.css">
     <link rel="stylesheet" href="CSS/experience.css">
+    <link rel="stylesheet" href="CSS/alert.css">
     
     
     <!-- Inconsolata CSS : font-family: 'Inconsolata', monospace; -->
@@ -62,6 +63,22 @@
     <!-- custom cursors  -->
     <div class="cursor-1"></div>
     <div class="cursor-2"></div>
+
+
+    <!-- Contact Notification Alert -->
+    <div class="alert-box" id="alertBox">
+        <div class="row">
+            <p class="py-2 m-auto" id="info">🎉  Message Delivered!</p>
+                <svg class="m-auto" id="cancelBtn" aria-hidden="true" viewBox="0 0 14 16">
+                  <path fill-rule="evenodd" d="M7.71 8.23l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75L1 11.98l3.75-3.75L1 4.48 2.48 3l3.75 3.75L9.98 3l1.48 1.48-3.75 3.75z"></path>
+                </svg>
+        </div>
+        
+        <div class="row">
+           <div role="progressbar" aria-hidden="false" aria-label="notification timer" class="Toastify__progress-bar Toastify__progress-bar--animated Toastify__progress-bar-theme--light Toastify__progress-bar--success" style="animation-duration: 3000ms;animation-play-state: play;opacity: 1;"></div>
+        </div>
+      
+    </div>      
 
     <!-- Navigation Bar -->
     <nav class="pt-1">

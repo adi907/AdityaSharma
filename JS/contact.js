@@ -54,8 +54,18 @@ async function createRecord(){
         hideLoadingOverlay();
 
         if(result.status===200){
-            alert("Message Sent Successfully");
-            // Add bootstrap/UI Helper Alert
+            // Notification Alert Box
+            document.getElementById("alertBox").style.display = "block";
+              
+            document.getElementById("cancelBtn").addEventListener("click", () => {
+              alertBox.style.display = "none";
+            });
+              
+            setTimeout(() => {
+                document.getElementById("alertBox").style.display = "none";
+            }, 3000);
+
+
         }else{
             document.getElementById('error-msg').innerText="Sorry, can not process the data. Please try again 🙏🏼";
         }
