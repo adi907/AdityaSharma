@@ -1,4 +1,15 @@
 let submitBtn=document.getElementById('sbmBtn');
+let wp=document.getElementById('Wp');
+let insta=document.getElementById('Insta');
+
+wp.addEventListener('click',()=>{
+    window.open("https://wa.me/919654875810");
+
+})
+
+insta.addEventListener('click',()=>{
+    window.open("https://www.instagram.com/adii907_/")
+})
 
 const api_submitReview='https://prod-23.westus.logic.azure.com:443/workflows/a2f00812298e469a988f883e4e80d5fe/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=gxmk6K1GFxMyUTbiRwKroDR9-zM1lIMKinF3hvMFHk0';
 

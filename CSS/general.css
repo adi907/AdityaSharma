@@ -58,6 +58,7 @@ section{
 .right{
     color: #36FBB1;
     right: 0;
+    height:85vh;
 }
 .right h2{
     position: relative;
@@ -150,4 +151,46 @@ button:active {
     .part{
         width: 95%;
     }
+}
+
+/* Whatsapp & Instagram icons */
+
+.fixedContact{
+    position: fixed;
+    bottom:3%;
+    right:3%;
+    z-index: 999;
+    /* overflow: hidden; */
+}
+.fixedContact div{
+    width:8vmin;
+    height:8vmin;
+    border-radius:1rem;
+}
+
+@keyframes swivel {
+    0%{transform:rotateY(0deg);}
+    25%{transform:rotateY(180deg);}
+    50%{transform:rotateY(360deg);}
+    100%{transform:rotateY(720deg);}
+}
+.WhatsApp:hover #Wp{
+    animation-name: swivel;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+.Instagram:hover #Insta{
+    animation-name: swivel;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.WhatsApp{
+    background-color: #25D366;
+}
+.Instagram{
+    background-color: #E4405F;
+}
+
+.fixedContact svg{
+    /* width:90%; */
 }
