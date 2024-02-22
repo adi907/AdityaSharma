@@ -50,6 +50,11 @@
   z-index: 2;
 }
 
+.timeline-right{
+  color: #36FBB1;
+  right: 0;
+}
+
 .timeline-box:nth-child(2n) {
   left: 53%;
 }
