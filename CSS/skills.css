@@ -46,6 +46,9 @@
 #db .skillIteams{
     height: 90%;
 }
+#lang .skillIteams{
+    height: 90%;
+}
 
 .skillIteams{
     grid-area: iteams;
@@ -78,9 +81,12 @@
     background-color: #B5CB99;
 }
 
-.iteamCircle img{
+#tools svg{
+    filter: invert(1);
+}
+
+.iteamCircle svg{
     transition: 0.5s all linear;
-    height: 60%;
 }
 .iteamCircle:hover > img{
     transform: rotate(360deg);
@@ -126,6 +132,18 @@
     .iteamCircle{
         height: 70px;
         width: 70px;
+    }
+
+    #lang{
+        margin-bottom:24px;
+    }
+
+    #lang .skillIteams{
+        height: 70%;
+    }
+
+    #db{
+        margin-top: 24px;
     }
 
     #db .skillIteams{
