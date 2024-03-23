@@ -143,6 +143,7 @@ button:active {
     .part{
         width: 95%;
     }
+
 }
 @media only screen and (max-width: 320px) {
     .title h1{
@@ -168,6 +169,10 @@ button:active {
     border-radius:1rem;
 }
 
+.fixedContact svg{
+    padding:20%;
+}
+
 @keyframes swivel {
     0%{transform:rotateY(0deg);}
     25%{transform:rotateY(180deg);}
@@ -191,6 +196,3 @@ button:active {
     background-color: #E4405F;
 }
 
-.fixedContact svg{
-    /* width:90%; */
-}

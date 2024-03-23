@@ -1,36 +1,38 @@
-let first = document.getElementById('hr1');
-let second = document.getElementById('hr2');
-let third = document.getElementById('hr3');
 let menu = document.querySelector('.phoneMenu');
+
+let hamburgerIcon = document.querySelector('.openHeader');
+let crossIcon = document.querySelector('.closeHeader');
+
 let count = 0;
 
 document.querySelector('menu').addEventListener('click',()=>{
     if(count%2 === 0){
         showMenu();
+        count=1;
     }else{
         hideMenu();
+        count=0;
     }
-    count++;
 });
 function showMenu() {
     disableScroll();
-    first.classList.remove("revind1");
-    second.classList.remove("revind2");
-    third.classList.remove("revind3");
-    first.classList.add("rotateDown");
-    second.classList.add("remove");
-    third.classList.add("rotateUp");
+
+    hamburgerIcon.classList.remove("showIcon");
+    crossIcon.classList.remove("hideIcon");
+
+    hamburgerIcon.classList.add("hideIcon");
+    crossIcon.classList.add("showIcon");
 
     menu.classList.remove("removePhoneMenu");
     menu.classList.add("showPhoneMenu");
 }
 function hideMenu() {
-    first.classList.add("revind1");
-    second.classList.add("revind2");
-    third.classList.add("revind3");
-    first.classList.remove("rotateDown");
-    second.classList.remove("remove");
-    third.classList.remove("rotateUp");
+
+    crossIcon.classList.remove("showIcon");
+    hamburgerIcon.classList.remove("hideIcon");
+
+    crossIcon.classList.add("hideIcon");
+    hamburgerIcon.classList.add("showIcon");
 
     menu.classList.remove("showPhoneMenu");
     menu.classList.add("removePhoneMenu");
