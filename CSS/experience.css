@@ -118,6 +118,7 @@
   color: #9c0304;
   font-weight: 400;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .experience-duration {
@@ -125,6 +126,7 @@
   font-weight: 100;
   color: grey;
   font-size: 1rem;
+  text-align: center;
 }
 
 .experience-description {
@@ -143,6 +145,13 @@
   }
   .experience-description{
     font-size: 0.5em;
+  }
+  .experience-duration{
+    font-size: 0.6em;
+  }
+
+  .contact_subtitle{
+    font-size: 12px;
   }
 
   .timeline-box:nth-child(2n) {

@@ -172,14 +172,14 @@
             <hr>
         </div>
         <div class="wrap">
-            <div class="heading" data-aos="fade-right">
-                <h4>I love to learn and lead.</h4>
+            <div class="heading my-3" data-aos="fade-right">
+                <h4>I love to <strong>Learn</strong> and <strong>Create</strong>.</h4>
             </div>
 
             <div class="aboutMe" data-aos="fade-right" data-aos-anchor=".heading">
                 <p>I'm a Final Year student pursuing Bachelors of Technology in Computer Science Engineering at <a href="" target="_blank">Manipal University Jaipur</a></p>
                 <p>I would describe myself as an avid learner with an immense passion for technology.
-                My skills range from <a href="#Projects">Web development</a>,<a href="#Projects">Programming in C/C++</a>,<a href="#Projects">Microsoft Power Apps</a>,<a href="#Projects">Power Automate</a>,<a href="#Projects">REST API</a> & <a href="#Projects">Database Management.</a>
+                My skills range from <a href="#Projects">Web development</a>,<a href="#Projects">Programming in C/C++</a>,<a href="#Projects">Microsoft Power Apps</a>,<a href="#Projects">Power Automate</a>,<a href="#Projects">REST API Development</a> & <a href="#Projects">Database Management.</a>
                 </p>
                 <p>I enjoy learning new skills and implementing them in real life!<br>
                     I am a believer of peer learning and always ready to share my knowledge.</p>
@@ -470,7 +470,7 @@
             <hr>
         </div>
 
-        <div class="row">
+        <div class="row" id="laptopContactForm">
             <div class="col mt-4">
 
                 <a href="mailto:adityaq907@gmail.com" target="_blank">
@@ -537,6 +537,90 @@
                     </div>
 
                 </form>
+            </div>
+        </div>
+
+        <div id="mobileContactForm">
+
+            <!-- <div class="d-flex flex-column justify-content-center align-items-center mt-4"> -->
+            <div class="mt-4">
+
+                <div class="social_info w-50 mx-auto my-3">
+
+                    <a href="mailto:adityaq907@gmail.com" target="_blank">
+                        <div class="row w-100">
+                            <i class="col-4 uil uil-envelope-alt h1"></i>
+                            <div class="col-8">
+                                <h3 class="contact_title">Email</h3>
+                                <span class="contact_subtitle">adityaq907@gmail.com</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="social_info w-50 mx-auto my-3">
+
+                    <a href="https://www.linkedin.com/in/aditya-sharma-7432a0208/" target="_blank">
+                        <div class="row w-100">
+                            <i class="col-4 uil uil-linkedin-alt h1"></i>
+                            <div class="col-8">
+                                <h3 class="contact_title">LinkedIn</h3>
+                                <span class="contact_subtitle">aditya-sharma-7432a0208</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="social_info w-50 mx-auto my-3">
+
+                    <a href="#Contact">
+                        <div class="row w-100">
+                            <i class="col-4 uil uil-location-point h1"></i>
+                            <div class="col-8">
+                                <h3 class="contact_title">Location</h3>
+                                <span class="contact_subtitle">New Delhi, India</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                
+                    <form class="contact_form grid" id="contact-form">
+
+                        <div id="alert" class="alert_style"></div>
+
+                        <div class="contact_inputs grid">
+
+                            <div class="contact_content mb-2">
+                                <input type="text" name="name" class="contact_input" placeholder="Name" id="name" required>
+                            </div>
+                            <div class="contact_content mb-2">
+                                <input type="email" name="email" class="contact_input" placeholder="Email" id="email" required>
+                            </div>
+                            <div class="contact_content mb-2">
+                                <input type="text" name="subject" class="contact_input" placeholder="Subject" id="subject" required>
+                            </div>
+                            <div class="contact_content mb-2">
+                                <textarea name="message" id="Reviewmessage" cols="0" rows="3" class="contact_input message" placeholder="Message" required></textarea>
+                            </div>
+                    
+                        </div>
+
+                        <div>
+                            <button type="button" class="mt-3" id="sbmBtn" onclick="createRecord()">
+                                <p class="mx-2 mt-1 mb-4">Send Message
+                                    <i class="uil uil-message button_icon"></i>
+                                </p>
+                            </button>
+
+                            <p><small id="error-msg"></small></p>
+                        </div>
+
+                    </form>
             </div>
         </div>
 
