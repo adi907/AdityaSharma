@@ -1,8 +1,5 @@
 let menu = document.querySelector('.phoneMenu');
 
-let hamburgerIcon = document.querySelector('.openHeader');
-let crossIcon = document.querySelector('.closeHeader');
-
 let count = 0;
 
 document.querySelector('menu').addEventListener('click',()=>{
@@ -17,22 +14,22 @@ document.querySelector('menu').addEventListener('click',()=>{
 function showMenu() {
     disableScroll();
 
-    hamburgerIcon.classList.remove("showIcon");
-    crossIcon.classList.remove("hideIcon");
+    // hamburgerIcon.classList.remove("showIcon");
+    // crossIcon.classList.remove("hideIcon");
 
-    hamburgerIcon.classList.add("hideIcon");
-    crossIcon.classList.add("showIcon");
+    // hamburgerIcon.classList.add("hideIcon");
+    // crossIcon.classList.add("showIcon");
 
     menu.classList.remove("removePhoneMenu");
     menu.classList.add("showPhoneMenu");
 }
 function hideMenu() {
 
-    crossIcon.classList.remove("showIcon");
-    hamburgerIcon.classList.remove("hideIcon");
+    // crossIcon.classList.remove("showIcon");
+    // hamburgerIcon.classList.remove("hideIcon");
 
-    crossIcon.classList.add("hideIcon");
-    hamburgerIcon.classList.add("showIcon");
+    // crossIcon.classList.add("hideIcon");
+    // hamburgerIcon.classList.add("showIcon");
 
     menu.classList.remove("showPhoneMenu");
     menu.classList.add("removePhoneMenu");
