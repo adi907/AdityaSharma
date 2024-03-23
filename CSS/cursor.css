@@ -31,3 +31,9 @@
 .cursor-2.active{
     display: none;
 }
+
+@media only screen and (max-width:600px) {
+    .cursor-1,.cursor-2{
+        display: none;
+    }
+}
