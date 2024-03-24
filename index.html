@@ -527,7 +527,7 @@
                     </div>
 
                     <div>
-                        <button type="button" class="mt-3" id="sbmBtn" onclick="createRecord()">
+                        <button type="button" class="mt-3" id="sbmBtn" onclick="getDetails()">
                             <p class="mx-2 mt-1 mb-4">Send Message
                                 <i class="uil uil-message button_icon"></i>
                             </p>
@@ -596,28 +596,28 @@
                         <div class="contact_inputs grid">
 
                             <div class="contact_content mb-2">
-                                <input type="text" name="name" class="contact_input" placeholder="Name" id="name" required>
+                                <input type="text" name="name" class="contact_input" placeholder="Name" id="name_Mob" required>
                             </div>
                             <div class="contact_content mb-2">
-                                <input type="email" name="email" class="contact_input" placeholder="Email" id="email" required>
+                                <input type="email" name="email" class="contact_input" placeholder="Email" id="email_Mob" required>
                             </div>
                             <div class="contact_content mb-2">
-                                <input type="text" name="subject" class="contact_input" placeholder="Subject" id="subject" required>
+                                <input type="text" name="subject" class="contact_input" placeholder="Subject" id="subject_Mob" required>
                             </div>
                             <div class="contact_content mb-2">
-                                <textarea name="message" id="Reviewmessage" cols="0" rows="3" class="contact_input message" placeholder="Message" required></textarea>
+                                <textarea name="message" id="Reviewmessage_Mob" cols="0" rows="3" class="contact_input message" placeholder="Message" required></textarea>
                             </div>
                     
                         </div>
 
                         <div>
-                            <button type="button" class="mt-3" id="sbmBtn" onclick="createRecord()">
+                            <button type="button" class="mt-3" id="sbmBtn_Mob" onclick="getDetails()">
                                 <p class="mx-2 mt-1 mb-4">Send Message
                                     <i class="uil uil-message button_icon"></i>
                                 </p>
                             </button>
 
-                            <p><small id="error-msg"></small></p>
+                            <p><small id="error-msg_Mob"></small></p>
                         </div>
 
                     </form>
